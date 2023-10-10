@@ -1,0 +1,1 @@
+temprand = np.random.normal(loc=14.2,scale=4.7,size=10000)
