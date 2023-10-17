@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.30)  10 OCT 2023 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.30)  17 OCT 2023 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -129,7 +129,14 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count186
 \l__pdf_internal_box=\box49
 )
-(./lista2.aux)
+(./lista2.aux
+
+LaTeX Warning: Label `y2' multiply defined.
+
+
+LaTeX Warning: Label `y2' multiply defined.
+
+)
 \openout1 = `lista2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -146,8 +153,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count187
 \scratchdimen=\dimen142
@@ -177,23 +183,94 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lista2.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
+<lista2-1c.png, id=9, 775.4571pt x 302.0886pt>
+File: lista2-1c.png Graphic file (type png)
+<use lista2-1c.png>
+Package pdftex.def Info: lista2-1c.png  used on input line 40.
+(pdftex.def)             Requested size: 350.99762pt x 136.73604pt.
+<lista2-1d.png, id=11, 781.9614pt x 302.0886pt>
+File: lista2-1d.png Graphic file (type png)
+<use lista2-1d.png>
+Package pdftex.def Info: lista2-1d.png  used on input line 62.
+(pdftex.def)             Requested size: 350.99762pt x 135.5975pt.
+ [2 <./lista2-1c.png>]
+<lista2-1e.png, id=18, 779.7933pt x 302.0886pt>
+File: lista2-1e.png Graphic file (type png)
+<use lista2-1e.png>
+Package pdftex.def Info: lista2-1e.png  used on input line 70.
+(pdftex.def)             Requested size: 350.99762pt x 135.97548pt.
+<lista2-2c.png, id=19, 776.1798pt x 302.0886pt>
+File: lista2-2c.png Graphic file (type png)
+<use lista2-2c.png>
+Package pdftex.def Info: lista2-2c.png  used on input line 84.
+(pdftex.def)             Requested size: 350.99762pt x 136.61159pt.
+
+[3 <./lista2-1d.png> <./lista2-1e.png>]
+<lista2-2d.png, id=25, 776.9025pt x 302.0886pt>
+File: lista2-2d.png Graphic file (type png)
+<use lista2-2d.png>
+Package pdftex.def Info: lista2-2d.png  used on input line 105.
+(pdftex.def)             Requested size: 350.99762pt x 136.48251pt.
+<lista2-2e.png, id=26, 782.6841pt x 302.0886pt>
+File: lista2-2e.png Graphic file (type png)
+<use lista2-2e.png>
+Package pdftex.def Info: lista2-2e.png  used on input line 113.
+(pdftex.def)             Requested size: 350.99762pt x 135.47304pt.
+ [4 <./lista2-2c.png> <./lista2-2d.png>]
+<lista2-3c.png, id=32, 775.4571pt x 302.0886pt>
+File: lista2-3c.png Graphic file (type png)
+<use lista2-3c.png>
+Package pdftex.def Info: lista2-3c.png  used on input line 128.
+(pdftex.def)             Requested size: 350.99762pt x 136.73604pt.
+<lista2-3d.png, id=33, 775.4571pt x 302.0886pt>
+File: lista2-3d.png Graphic file (type png)
+<use lista2-3d.png>
+Package pdftex.def Info: lista2-3d.png  used on input line 149.
+(pdftex.def)             Requested size: 350.99762pt x 136.73604pt.
+[5 <./lista2-2e.png> <./lista2-3c.png>]
+<lista2-3e.png, id=39, 779.7933pt x 302.0886pt>
+File: lista2-3e.png Graphic file (type png)
+<use lista2-3e.png>
+Package pdftex.def Info: lista2-3e.png  used on input line 157.
+(pdftex.def)             Requested size: 350.99762pt x 135.97548pt.
+ [6 <./lista2-3d.png> <./lista2-3e.png>] (./lista2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3871 strings out of 481239
- 52716 string characters out of 5920377
- 304022 words of memory out of 5000000
- 19134 multiletter control sequences out of 15000+600000
- 535853 words of font info for 31 fonts, out of 8000000 for 9000
+ 4645 strings out of 481239
+ 61024 string characters out of 5920377
+ 507926 words of memory out of 5000000
+ 19891 multiletter control sequences out of 15000+600000
+ 539693 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,50p,435b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/shar
-e/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/
-public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
-1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on lista2.pdf (1 page, 25475 bytes).
+ 36i,9n,50p,435b,1563s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sftt1000.pfb>
+Output written on lista2.pdf (6 pages, 276253 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
