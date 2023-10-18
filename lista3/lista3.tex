@@ -39,8 +39,10 @@ A tabela \ref{tsarr} apresenta as integrais de escala de tempo e os grais de lib
 	\begin{tabular}{l|c|c|}
 		\cline{2-3}
 		& \multicolumn{1}{l|}{Integral de escala de tempo} & \multicolumn{1}{l|}{Grau de Liberdade} \\ \hline
-		\multicolumn{1}{|l|}{SSH} & 2.28                                             & 3.5                                    \\ \hline
-		\multicolumn{1}{|l|}{TSL} & 4.47                                             & 1.8                                    \\ \hline
+		\multicolumn{1}{|l|}{SSH} & 7.39
+		                                            & 29.74                                    \\ \hline
+		\multicolumn{1}{|l|}{TSL} & 10.5
+		                                             & 20.89                                   \\ \hline
 	\end{tabular}
 	\caption{Integral de escala e graus de liberdade para as séries temporais}
 	\label{tsarr}
@@ -50,8 +52,10 @@ A tabela \ref{tsarr} apresenta as integrais de escala de tempo e os grais de lib
 	\begin{python}
 cor = np.zeros_like(ssh[:,:,0])
 for i in range (ssh.shape[0]):
-	for j in range (ssh.shape[1]):
-		cor[i,j],_ = scipy.stats.pearsonr(ssh[i,j,:],tsl[i,j,:])
+for j in range (ssh.shape[1]):
+x = pd.Series(ssh[i,j,:])
+y = pd.Series(tsl[i,j,:])
+cor[i,j] = pd.Series.corr(x,y)
 	\end{python}
 	É possível plotar a figura \ref{fig:lista3-3c}
 	
@@ -130,7 +134,8 @@ Essa série vai possuir uma frequência de 2 amostras por segundo, mudando o val
 	\includegraphics[width=1\linewidth]{lista3-5-400}
 	\caption{Série temporal gerada com N=400 e a sua autocorreção }
 	\label{fig:lista3-5-400}
-\end{figure}
+\end{figure} 
+Aumentar o N seria o equivalente a aumentar a resolução dos dados em questão, com isso se pode analisar o que ocorre em concentrações de tempo mais curtas, visto que a frequência de amostragem permanece a mesma para todos os N. Ao diminuir, se tem as tendências de longo prazo apresentadas. 
 
 Para a concentração de CO2 de Mauna Loa, a autocorrelação da série original e da série com a tendencia removida é apresentada na figura \ref{fig:lista3-6a}
 \begin{figure}[H]
@@ -139,6 +144,14 @@ Para a concentração de CO2 de Mauna Loa, a autocorrelação da série original
 	\caption{Autocorrelação da concentração de CO2 de Mauna Loa, utilizando os dados originais e os dados com a tendência removida respectivamente}
 	\label{fig:lista3-6a}
 \end{figure}
+A principal informação que a autocorrelação trás é se os dados são aleatórios, como se pode observar pela figura \ref{fig:lista3-6a} a autocorrelação demora até cair para 0 e tem diversos pontos com valores maiores que 0, mostrando que os dados não são aleatórios, é possível ver também a presença de um sinal ondulatório que acaba sendo mascarado ao utilizar somente os dados originais pois a tendência do aumento da concentração de CO$_2$ é bem maior que as variações mensais. A figura  \ref{fig:lista3-6a2} mostra a autocorrelação com o lag indo até 60, onde a variabilidade do sinal fica mais clara
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{lista3-6a2}
+	\caption{Auocorrelação da concentração de CO2 de Mauna Loa, utilizando os dados originais e os dados com a tendência removida respectivamente considerando apenas até o lag 60.}
+	\label{fig:lista3-6a2}
+\end{figure}
+
 Plotando o histograma:
 \begin{figure}[H]
 	\centering
