@@ -36,6 +36,8 @@ Calculando a PSD com a função welch do pacote SciPy para as altas e baixas fre
 		\label{fig:lista5-2d}
 	\end{figure}
 
+	Analisando a figura \ref{fig:lista5-2c} é visível que existe um pico na frequência de $0.1e^{-4}$ [Hz], que indica que existe uma repetição do sinal em aproximadamente 27h, com outros sinais sendo representados mas sem serem os dominantes. Ao retirar as altas frequências e realizar a PSD, se repara na figura \ref{fig:lista5-2d} que o sinal dominante se torna o de $1e^{-6}$[Hz], que representaria a repetição do sinal em torno de aproximadamente 11 dias. \\
+	
 	
 	
 \textbf{Parte II – Análises Espectrais utilizando os métodos de Welch e Lamb}
@@ -49,7 +51,7 @@ Plotando a densidade espectral de potência para a série disponível em \textit
 	\label{fig:lista5-3a}
 \end{figure}
 
-Adicionando uma frequência adicional de 110Hz se obtêm a figura  \ref{fig:lista5-3b}.
+Adicionando uma frequência adicional de 110Hz se obtêm a figura  \ref{fig:lista5-3b}, onde se nota a presença da nova frequência adicionada.
 
 \begin{figure}[H]
 	\centering
@@ -76,6 +78,6 @@ Utilizando o pacote SciPy para calcular a PSD pelo método de Lamb, se obtém a 
 	\caption{PSD pelo método de Lamb dos arquivos \textit{fu.dat} e \textit{tu.dat}}
 	\label{fig:lista5-4b}
 \end{figure}
-Com as frequências dominantes sendo as de 0Hz e a de 20Hz.
+Com as frequências dominantes sendo as de 1.8Hz e a de 21Hz, com um sinal maior com pico próximo a 10Hz.
 
 \end{document}
