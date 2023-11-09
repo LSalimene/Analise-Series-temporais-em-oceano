@@ -87,9 +87,30 @@ Caso se deseje mudar algum parâmetro, basta adicionar ele na chamada da funçã
 \begin{python}
 wavelet(ssti,time,wavelet='mexh')
 \end{python}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{lista6-3}
+	\caption{Wavelet por mexh}
+	\label{fig:lista6-3}
+\end{figure}
+
 Para uma wavelet do tipo de Gaus com a utilização de filtragem para apresentar as altas frequências:
 \begin{python}
 wavelet(ssti,time,alta=True,wavelet='gaus1')
 \end{python}
-As saídas para diversos casos são encontradas no arquivo Jupyter da lista.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{lista6-4}
+	\caption{Wavelet por gaus1 com filtragem nas altas frequências}
+	\label{fig:lista6-4}
+\end{figure}
+Analisando a figura \ref{fig:lista6-2} se pode reparar a presença de de um sinal de alta frequência presente durante todo o período da serie temporal, e a presença de um sinal oscilante entre 64 Hz e 256Hz, com bastante ruído em frequência menores. \\
+
+Ao utilizar a wavelet mãe do tipo chapéu mexicano, se obtém o resultado mostrado na figura \ref{fig:lista6-3}, onde o sinal de alta frequência sumiu e existe um sinal oscilante com picos a cada 250 períodos da série temporal.  \\
+
+Utilizando um filtro para as altas frequências e uma wavelet mãe do tipo gaussiana, se obtém o resultado apresentado na figura \ref{fig:lista6-4}, onde todo o sinal de alta frequência foi retirado e sobra apenas os sinais oscilatórios na faixa de 64 Hz e 256 Hz, com um ruído melhor apresentado por esse método, permitindo a visualização de sinais de baixa frequência. \\
+
+Outros resultados com wavelet mãe diferentes estão disponíveis no código do github.
+
 \end{document}
